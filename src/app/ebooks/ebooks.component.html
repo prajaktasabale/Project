@@ -1,0 +1,20 @@
+<
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Subject</th>
+            <th>Download</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.subject}}</td>
+            <td><a href="/download">Download</a></td>
+        </tr>
+    </tbody>
+</table>
+>

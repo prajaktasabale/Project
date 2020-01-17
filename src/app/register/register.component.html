@@ -1,0 +1,90 @@
+<form #myForm="ngForm" (ngSubmit)="OnAddCallMe(myForm)">
+        <legend style="text-align: center;">Register here</legend>
+<table class="table table-bordered table-hover">
+    <tbody>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Student Name</label>
+                    <input type="text" name="name" id="inputname" class="form-control" value="" required="required">
+                </td>
+            </tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Email</label>
+                    <input type="email" name="email" id="inputemail" class="form-control" value="" required="required">    
+                </td>
+            <tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Address</label>
+                    <input type="text" name="address" id="inputaddr" class="form-control" value="" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Date of Birth</label>
+                    <input type="date" name="dob" id="inputdob" class="form-control" value="" required="required">    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Gender</label><br>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" id="input" value="">
+                            Male
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" id="input" value="">
+                        Female
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" id="input" value="">
+                            Other
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Nationality</label>
+                    <input type="text" name="nationality" id="inputnationality" class="form-control" value="" required="required">    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Contact No</label>
+                    <input type="tel" name="contact" id="inputcontact" class="form-control" value="" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="input-id" class="col-sm-6">Course</label><br>
+                    <select name="course" id="course" class="col-sm-12">
+                        <option>PG-DAC</option>
+                        <option>PG-DMC</option>
+                        <option>PG-DBDA</option>
+                        <option>PG-DESD</option>
+                        <option>PG-DIoT</option>
+                    </select>
+                </td>
+            </tr><br>
+            <tr>
+                <td class="col-sm-3">
+                    <button type="submit" class="btn btn-large btn-block btn-success">Register</button>
+               </td>
+                <td class="col-sm-3">
+                    <button type="button" class="btn btn-success" (click)="GoBackHome()">Go Back to Home</button>    
+                </td>
+                <span class="label label-warning">{{message}}</span>
+            </tr>
+
+         </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+    </tbody>
+</table>
+</form>
